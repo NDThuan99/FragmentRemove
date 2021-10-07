@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="addA"
+        android:id="@+id/buttonaddA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="add a"/>
+
+    <Button
+        android:onClick="addB"
+        android:id="@+id/buttonaddB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add b"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/buttonaddA"/>
+
+    <Button
+        android:onClick="addC"
+        android:id="@+id/buttonaddC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add c"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/buttonaddB"/>
+
+    <Button
+        android:onClick="dellA"
+        android:id="@+id/buttonxA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x a"
+        android:layout_below="@+id/buttonaddA"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:onClick="dellB"
+        android:id="@+id/buttonxB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x b"
+        android:layout_below="@+id/buttonaddA"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/buttonxA"/>
+
+    <Button
+        android:onClick="dellC"
+        android:id="@+id/buttonxC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x c"
+        android:layout_below="@+id/buttonaddA"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/buttonxB" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Back"
+        android:text="back"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:onClick="pop"
+        android:id="@+id/buttonPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="hello bạn bạn của tôi"
+        android:textColor="#121111"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ánhdfkdfo"
+        android:layout_alignParentBottom="true"/>
+    <FrameLayout
+        android:id="@+id/frlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+</RelativeLayout>
